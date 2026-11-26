@@ -498,7 +498,7 @@ footer{padding-block:2.5rem 5rem;color:var(--grey);font-size:.82rem;display:flex
   var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Ligne de rôle
-  var ROLES={fr:['Marketing orienté data','Tableaux de bord & KPI','Automatisation & IA'],en:['Data-driven marketing','Dashboards & KPIs','Automation & AI']},LANG='fr',ri=0,re=document.getElementById('role');
+  var ROLES={fr:['Marketing orienté data','Partnership & Influence','Tableaux de bord & KPI','Automatisation & IA'],en:['Data-driven marketing','Partnership & Influence','Dashboards & KPIs','Automation & AI']},LANG='fr',ri=0,re=document.getElementById('role');
   if(re&&!still) setInterval(function(){re.classList.add('swap');setTimeout(function(){ri=(ri+1)%ROLES[LANG].length;re.textContent=ROLES[LANG][ri];re.classList.remove('swap');},450);},3000);
 
   // Cards : chaque entrée de souris bascule l'état, qui reste ensuite ; tap sur mobile
